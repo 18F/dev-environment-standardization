@@ -1,0 +1,110 @@
+---
+# .about.yml project metadata
+#
+# Short name that acts as the project identifier (required)
+name: dev-environment-standardization
+
+# Full proper name of the project (required)
+full_name: Development Environment Standardization Guide
+
+# The type of content in the repo
+# values: app, docs, policy
+type: docs
+
+# Describes whether a project team, working group/guild, etc. owns the repo (required)
+# values: guild, working-group, project
+owner_type: working-group
+
+# Name of the main project repo if this is a sub-repo; name of the working group/guild repo if this is a working group/guild subproject
+parent: wg-documentation
+
+# Maturity stage of the project (required)
+# values: discovery, alpha, beta, live, sunset, transfer, end
+stage: discovery
+
+# Description of the project
+description: Guide to configuring standard language and operating system environments for software development
+
+# Tags that describe the project or aspects of the project
+tags:
+- guide
+- development
+- standardization
+- programming languages
+- virtualization
+
+# Should this repo have automated tests? If so, set to `true`. (required)
+# values: true, false
+testable: false
+
+# Team members contributing to the project (required)
+# Items:
+# - github: GitHub user name
+#   id: Internal team identifier/user name
+#   role: Team member's role; leads should be designated as 'lead'
+team:
+- github: mbland
+  role: lead
+- github: ccostino
+  role: lead
+- github: jeremiak
+  role: lead
+
+# Organizations or individuals who have adopted the project for their own use
+# Items:
+# - id: The name of the organization or individual
+#   url: A URL to the user's version of the project
+#users:
+#- 
+
+# Brief descriptions of significant project developments
+#milestones:
+#- 
+
+# Technologies used to build the project
+stack:
+- Jekyll
+- Ruby
+
+# Brief description of the project's outcomes
+#impact:
+
+# Services used to supply project status information
+# Items:
+# - name: Name of the service
+#   category: Type of the service
+#   url: URL for detailed information
+#   badge: URL for the status badge
+#services:
+#- 
+
+# Licenses that apply to the project and/or its components (required)
+# Items by property name pattern:
+#   .*:
+#     name: Name of the license from the Software Package Data Exchange (SPDX): https://spdx.org/licenses/
+#     url: URL for the text of the license
+licenses:
+  dev-environment-standardization:
+    name: Public Domain (CC0)
+    url: https://creativecommons.org/publicdomain/zero/1.0/ 
+
+# Blogs or websites associated with project development
+#blog:
+#- 
+
+# Links to project artifacts
+# Items:
+# - url: URL for the link
+#   text: Anchor text for the link
+links:
+- url: https://pages.18f.gov/dev-environment-standardization-guide/
+  text: Development Environment Standardization Guide
+
+
+# URIs for points-of-contact
+# Items:
+# - url: URL for the link
+#   text: Anchor text for the link
+contact:
+- url: https://github.com/18F/dev-environment-standardization-guide/issues
+  text: 18F/dev-environment-standardization-guide GitHub issues

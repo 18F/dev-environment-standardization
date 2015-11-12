@@ -1,0 +1,72 @@
+markdown: redcarpet
+name: Development Environment Standardization Guide
+exclude:
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
+- go
+- vendor
+
+permalink: pretty
+highlighter: rouge
+incremental: true
+
+sass:
+  style: :compressed
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: 18F
+  url: https://18f.gsa.gov
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Introduction
+  url: index.html
+  internal: true
+- text: Languages
+  url: languages/
+  internal: true
+  children:
+  - text: Go
+    url: go/
+    internal: true
+  - text: NodeJS
+    url: node/
+    internal: true
+  - text: Python
+    url: python/
+    internal: true
+  - text: Ruby
+    url: ruby/
+    internal: true
+- text: Virtualization
+  url: virtualization/
+  internal: true
+  children:
+  - text: Docker
+    url: docker/
+    internal: true
+  - text: Vagrant
+    url: vagrant/
+    internal: true
+
+repos:
+- name: Development Environment Standardization Guide
+  description: Main repository
+  url: https://github.com/18F/dev-environment-standardization
+
+back_link:
+  url: "https://pages.18f.gov/guides/"
+  text: Read more 18F Guides
+
+google_analytics_ua: UA-48605964-19
+
+defaults:
+- scope:
+    path: ""
+  values:
+    layout: "guides_style_18f_default"
