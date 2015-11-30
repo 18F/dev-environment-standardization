@@ -75,7 +75,7 @@ In addition to installing packages from PyPI, `pip` can also install packages
 directly from several types of source control repositories (git, Mercurial,
 Subversion) or even from another location on your local machine.
 
-## Using pip
+## Using `pip`
 
 `pip` is a simple way to install a Python package.  For instance, if you want
 to install Django, you can do this:
