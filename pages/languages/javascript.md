@@ -6,35 +6,34 @@ parent: Languages
 
 # JavaScript Ecosystem Guide
 
-The purpose of this guide is to help familiarize yourself with the JavaScript ecosystem and set up a handful of tools to help create a seamless working development environment. In particular, we’ll be using a tool called `nvm` to make sure we’ve got the right versions of `node` and `npm` installed for a project.
+This guide explains how to set up basic tools for working with JavaScript projects on your computer, specifically for working with [Node.js](https://nodejs.org/en/) (also called Node) and [npm](https://www.npmjs.com/), so that you can run and modify 18F projects that use these tools. (People who use JavaScript have built many useful tools on top of JavaScript, and this guide explains the few that we use a lot at 18F; this doesn't cover the entire JavaScript ecosystem.)
 
-## Node Installation
+We wrote this guide for people inside and outside 18F who want to set up their own development environments for contributing to our projects — or reusing and adapting these projects for their own purposes! Following these setup instructions doesn't require knowing how to code.
 
-Node is super easy to install and you can do so in a number of ways. The fine folks behind the project have put a bunch of time and energy into ensuring cross platform compatibility and it totally shows.
+Note: this guide talks about both `npm` and `nvm` — one letter different, but different tools.
 
-You can install it through the binaries on nodejs.org, through `brew` on Mac OS X, or compiling it from source but the preferred method is through a tool called `nvm`. `nvm` stands for Node Version Manager. It will enable us to easily install and use different versions of Node (including the relatively short lived iojs fork).
+## Installing Node
 
-## nvm Installation
+There are multiple ways to install Node, including through the binary downloads on [nodejs.org](https://nodejs.org/en/), through [Homebrew](http://brew.sh/) (`brew`) on OS X, or compiling it from [source](https://nodejs.org/en/download/). We've found that the most useful way is to first install a tool called `nvm` (Node Version Manager), since `nvm` helps you install and use multiple versions of Node.
 
-You can find the homepage for the project at https://github.com/creationix/nvm and [installation instructions](https://github.com/creationix/nvm#install-script) there. Overall, it is a really easy tool to set up, and can generally done with copying and pasting the following line of code into your terminal:
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+## Installing nvm
 
-Once you have `nvm` installed, you can use it by just typing `nvm` on your command line. Generally, the first thing you’ll want to do is install a version of node. Let’s say your project calls for node v0.12.x (generally you can find this information under `engines` in the `package.json` at the root of the project).
+To install [`nvm`](https://github.com/creationix/nvm), follow [its installation instructions](https://github.com/creationix/nvm#node-version-manager-) — running the install script should work fine.
 
-You can just issue the command `$ nvm install 0.12` which will install the correct binary for node. You can see all of the node versions you have installed with `nvm ls`.
+Once you've installed `nvm`, you can use it by typing `nvm` on your command line. Now you can install a version of node. Let’s say your project calls for node v0.12.x (generally you can find this information under `engines` in the `package.json` at the root of the project).
 
-To use any of the versions of node you have installed, you just need to use the `nvm use` command. For example, if we wanted to use the v0.12 we just installed, we can simply say `nvm use 0.12` and the version will be switched for us. You can confirm that it has been by asking node for its version like `node --version`.
+You can issue the command `nvm install 0.12` which will install the correct binary for node. You can see all of the node versions you have installed with `nvm ls`.
 
-You can install any version of node this way. To see all the options you can use `nvm ls-remote`.
+To use any of the versions of node you have installed, use the `nvm use` command. For example, if you wanted to use the v0.12 you just installed, you can say `nvm use 0.12` and the version will be switched for you. You can confirm this by asking node for its version: `node --version`.
 
-Woah, that’s a lot of nodes.
+You can install any version of node this way. To see all the options, use `nvm ls-remote`.
 
-## npm Installation
+Whoa, that’s a lot of nodes.
 
-Now, all versions of node you’ll install come prepackaged with `npm`. `npm` is the defacto package manager for JavaScript, but the team behind it makes it a point to be clear that it doesn’t stand for Node Package Manager.
+## Installing npm
 
-It really doesn’t matter what it stands for, it is just a pretty great tool and a cornerstone of the JavaScript ecosystem.
+When you install Node, it comes with `npm`. `npm` is the de facto package manager for JavaScript. (If you're wondering, the team behind `npm` says it doesn't stand for Node Package Manager. It doesn’t matter what it stands for, it is just a useful tool and part of the JavaScript ecosystem.)
 
 Take a look and see which version of `npm` you currently have installed. You can do this with a similar `--version` flag, like `npm --version`.
 
-Now let’s say that you wanted to have a different version of `npm` installed for the version of node you’re using. `npm` is updatable through `npm`, so if you wanted version 2.11.3 of `npm` you would just say `npm install -g npm@2.11.3`. Check your `npm` version after running this to make sure it worked.
+Now let’s say that you want to have a different version of `npm` installed for the version of node you’re using. `npm` is updatable through `npm`, so if you wanted version 2.11.3 of `npm` you would say `npm install -g npm@2.11.3`. Check your `npm` version after running this to make sure it worked.
