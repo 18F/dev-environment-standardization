@@ -34,14 +34,14 @@ navigation:
   - text: Go
     url: go/
     internal: true
-  - text: NodeJS
-    url: node/
-    internal: true
   - text: Python
     url: python/
     internal: true
   - text: Ruby
     url: ruby/
+    internal: true
+  - text: JavaScript
+    url: javascript/
     internal: true
 - text: Virtualization
   url: virtualization/
