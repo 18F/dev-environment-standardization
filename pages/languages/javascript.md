@@ -6,7 +6,7 @@ parent: Languages
 
 # JavaScript Ecosystem Guide
 
-The purpose of this guide is to help familiarize yourself with the JavaScript ecosystem and set up a handful of tools to help create a seamless working development environment. In particular, we’ll be using a tool called `nvm` to make sure we’ve got the right versions of `node` and `npm` installed for a project.
+The purpose of this guide is to help familiarize yourself with the JavaScript ecosystem and set up a handful of tools to help create a seamless working development environment. In particular, we’ll be using a tool called `nvm` to make sure we’v, e got the right versions of `node` and `npm` installed for a project.
 
 ## Node Installation
 
@@ -15,6 +15,8 @@ Node is super easy to install and you can do so in a number of ways. The fine fo
 You can install it through the binaries on nodejs.org, through `brew` on Mac OS X, or compiling it from source but the preferred method is through a tool called `nvm`. `nvm` stands for Node Version Manager. It will enable us to easily install and use different versions of Node (including the relatively short lived iojs fork).
 
 ## nvm Installation
+
+### Installing on Mac OS X
 
 You can find the homepage for the project at https://github.com/creationix/nvm and [installation instructions](https://github.com/creationix/nvm#install-script) there. Overall, it is a really easy tool to set up, and can generally done with copying and pasting the following line of code into your terminal:
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
@@ -28,6 +30,10 @@ To use any of the versions of node you have installed, you just need to use the 
 You can install any version of node this way. To see all the options you can use `nvm ls-remote`.
 
 Woah, that’s a lot of nodes.
+
+### Installing on Windows
+
+For installing on a Windows machine, we recommend using [nvm-windows](https://github.com/coreybutler/nvm-windows).
 
 ## npm Installation
 
