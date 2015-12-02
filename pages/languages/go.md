@@ -36,8 +36,7 @@ to install the `gvm` program:
 $ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 ```
 
-The latest Go version at the time of writing is 1.5.1; you can see the
-currently available versions using:
+You can see the currently available versions using:
 
 ```sh
 $ gvm listall
@@ -49,9 +48,13 @@ To see the currently installed versions:
 $ gvm list
 ```
 
-Then to install a particular version from a binary distribution, where
-`VERSION` is one of the identifiers from `gvm listall` (to install from
-source, leave off the `-B` flag):
+The latest Go version at the time of writing is 1.5.1. See the
+[Go version 1.5 installation notes](#installing-1.5) below, as installing it
+currently requires a little extra care.
+
+To install earlier Go versions from a binary distribution, where `VERSION` is
+one of the identifiers from `gvm listall` (to install from source, leave off
+the `-B` flag):
 
 ```sh
 $ gvm install VERSION -B
@@ -70,7 +73,7 @@ You can then check that Go was successfully installed by running:
 $ go version
 ```
 
-## Installing versions 1.5 and later
+## <a name="installing-1.5"></a>Installing versions 1.5 and later
 
 Starting with the 1.5 series, [Go must be compiled using an earlier version of
 Go](https://docs.google.com/document/d/1OaatvGhEAq7VseQ9kkavxKNAfepWy2yhPUBs96FGV28/edit).
