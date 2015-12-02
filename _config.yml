@@ -27,6 +27,9 @@ navigation:
 - text: Introduction
   url: index.html
   internal: true
+- text: Working with forked GitHub repositories
+  url: github-forks/
+  internal: true
 - text: Languages
   url: languages/
   internal: true
