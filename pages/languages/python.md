@@ -199,7 +199,7 @@ globally, as well as any `virtualenv` support tools you plan on using (e.g.,
 `virtualenvwrapper` and `autoenv`).
 
 IPython (now a sub-component of the Jupyter project) is another useful
-exception as it is a much richer REPL (Run-Eval-Print Loop) to use when
+exception as it is a much richer REPL (Read-Eval-Print Loop) to use when
 working with Python, and if you're just testing something quick it is a bit of
 a pain to have to get into a specific project.  You can read more about
 IPython here:  http://ipython.org/
