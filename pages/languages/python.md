@@ -36,8 +36,8 @@ are several ways you can download and install Python:
   - [Python Launcher for Windows(as of version 3.3)](https://docs.python.org/3/using/windows.html#python-launcher-for-windows)
 
 When you install Python directly on a UNIX-based system, Python 2.x
-installations will make use of the python and pip command line shortcuts and
-Python 3.x installations will make use of `python3` and `pip3` shortcuts. Both
+installations use the `python` and `pip` command line shortcuts and
+Python 3.x installations use the `python3` and `pip3` shortcuts. Both
 versions will play nicely side-by-side with each other, unlike a lot of other
 dynamic languages (e.g., Ruby, Perl).  Windows-based environments are slightly
 different yet can still accommodate both versions installed directly.
@@ -254,13 +254,8 @@ testing with Python:
 
 # Additional Reading
 
-- https://www.brianthicks.com/2015/04/10/pyenv-your-python-environment-automated/
-- http://amaral-lab.org/resources/guides/pyenv-tutorial
-- https://github.com/yyuu/pyenv/blob/master/README.md
-- https://github.com/yyuu/pyenv-virtualenv/blob/master/README.md
-- https://docs.python.org/3/tutorial/venv.html
-- http://pip.readthedocs.org/en/stable/
-- https://virtualenv.readthedocs.org/en/latest/
-- https://pypi.python.org/pypi
-- http://docs.python-guide.org/
-- https://www.python.org/dev/peps/pep-0008/
+- [The Python Tutorial: Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html) by the Python Software Foundation
+- [PEP 0008 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+- [Automate your Python environment with pyenv](https://www.brianthicks.com/2015/04/10/pyenv-your-python-environment-automated/) by Brian Hicks
+- [pyenv Tutorial](http://amaral-lab.org/resources/guides/pyenv-tutorial) by João Moreira
+- [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/) by Kenneth Reitz and others
