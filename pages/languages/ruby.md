@@ -172,7 +172,7 @@ small handful of gems that might need to be installed in the global `gems`
 directory.  Bundler is one such exception certainly.
 
 Pry is another noteworthy exception as it is a much richer REPL
-(Run-Eval-Print Loop) to use when working with Ruby, and if you're just
+(Read-Eval-Print Loop) to use when working with Ruby, and if you're just
 testing something quick it is a bit of a pain to have to get into a specific
 project.  You can read more about Pry here:  http://pryrepl.org/
 
