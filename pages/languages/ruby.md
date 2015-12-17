@@ -32,7 +32,7 @@ are several ways you can download and install Ruby:
 - On a recent OS X system, with [Homebrew](http://brew.sh/).
 - With a Ruby version manager (both of these are popular, so pick the one that
   looks good to you):
-  - [rbenv](https://github.com/sstephenson/rbenv)
+  - [rbenv](https://github.com/rbenv/rbenv)
   - [RVM](https://rvm.io/)
 
 If you choose to use a version manager to install Ruby, this gives
@@ -86,11 +86,13 @@ and detailed usage information, see the
 
 With Ruby installed and working with Ruby gems under your belt, there is one
 last thing to discuss:  per-project dependencies.  When you install a Ruby
-gem, by default it will go into a directory called `gems` (commonly referred to as the "global `gems` directory"), which is a couple of levels down from wherever Ruby is installed on your computer.  This can cause
-problems though, because different projects may require different versions of
-these gems (which cannot both be installed in the same place at the same
-time). Also, you may not have the appropriate permissions for installing gems
-there, such as if you're using a shared host.
+gem, by default it will go into a directory called `gems` (commonly referred
+to as the "global `gems` directory"), which is a couple of levels down from
+wherever Ruby is installed on your computer.  This can cause problems though,
+because different projects may require different versions of these gems (which
+cannot both be installed in the same place at the same time). Also, you may
+not have the appropriate permissions for installing gems there, such as if
+you're using a shared host.
 
 A better approach is to keep project package dependencies isolated from each
 other and from the global `gems` directory.  This enables you to install Ruby
@@ -114,7 +116,7 @@ a `Gemfile`.
 
 To create and manage gemsets, you must use a Ruby version manager,
 either [RVM](https://rvm.io/) itself or
-[rbenv](https://github.com/sstephenson/rbenv) with the
+[rbenv](https://github.com/rbenv/rbenv) with the
 [rbenv-gemset](https://github.com/jf/rbenv-gemset) plugin.
 
 ## Using Bundler and the `bundle` Command
