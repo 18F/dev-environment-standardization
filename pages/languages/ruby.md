@@ -86,9 +86,7 @@ and detailed usage information, see the
 
 With Ruby installed and working with Ruby gems under your belt, there is one
 last thing to discuss:  per-project dependencies.  When you install a Ruby
-gem, by default it will go into a directory called `gems`, which is a
-couple of levels down from wherever Ruby is installed on your computer
-(commonly referred to as the "global `gems` directory").  This can cause
+gem, by default it will go into a directory called `gems` (commonly referred to as the "global `gems` directory"), which is a couple of levels down from wherever Ruby is installed on your computer.  This can cause
 problems though, because different projects may require different versions of
 these gems (which cannot both be installed in the same place at the same
 time). Also, you may not have the appropriate permissions for installing gems
@@ -106,11 +104,11 @@ Ruby gemsets are a way of managing per-project dependencies, first
 [introduced by the version manager RVM](https://rvm.io/gemsets/basics). A
 gemset is a specific directory that a collection of gems are installed in. You
 define the gemset yourself and name it what you want, usually after the
-project youa re working on.
+project you're working on.
 
 This may remind you of a `Gemfile`, but the two are not the same. A `Gemfile`
 lists all of the dependencies that a project relies on and can help lock those
-dependencies at a specific version(s). A gemset is a specific directory
+dependencies at specific versions. A gemset is a specific directory
 designated by the user to install a group of gems into, such as those found in
 a `Gemfile`.
 
@@ -121,12 +119,12 @@ either [RVM](https://rvm.io/) itself or
 
 ## Using Bundler and the `bundle` Command
 
-[Bundler](http://bundler.io/) is another tool in the Ruby community for
+[Bundler](http://bundler.io/) is another tool for
 installing gem dependencies for a project.  It can be used by itself or in
 conjunction with a Ruby version manager and gemsets.  To use Bundler, which is
 a Ruby gem, you must install it first.  This is one of the instances where
 installing a gem globally is helpful, because it is intended to be used
-outside the context of any specific project even though it is being used to
+outside the context of any specific project, even though it is being used to
 manage the dependencies within a project:
 
 `$ gem install bundler`
@@ -141,15 +139,15 @@ Or update them:
 
 `$ bundle update`
 
-If you find out you need to execute a project's scripts related to its gems
+If you need to execute a project's scripts related to its gems
 (such as if documentation advises this), you can use Bundler to do this.  For
 example, running a Rails console:
 
 `$ bundle exec rails c`
 
 Performing Bundler commands while a gemset is active will lead to the
-gems only being installed within that gemset.  However, if you choose not to
-use gemsets you can still use Bundler to manage per-project
+gems only being installed within that gemset.  If you choose not to
+use gemsets, you can still use Bundler to manage per-project
 dependencies by specifying a directory when installing dependencies:
 
 `$ bundle install --path=<specified path>`
