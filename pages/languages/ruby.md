@@ -14,6 +14,42 @@ aren't already familiar with working on Ruby projects. This guide is both for
 people who write a lot of code and for people who don't write any code
 (setting up this development environment doesn't require coding knowledge).
 
+# Before Starting
+
+There are a couple of pre-requisites that must be installed on your system
+before you can continue.
+
+## Linux Environments
+
+You will need to install the `build-essential` package to ensure that your
+system has the necessary components for building Ruby.  In Ubuntu and other
+Debian-based Linux distributions, run this command:
+
+`$ sudo apt-get install build-essential`
+
+If you are using another Linux variant, please refer to its documentation for
+the appropriate command to install third-party packages.
+
+## OS X Environments
+
+For more recent versions of OS X (Mavericks, Yosemite, and El Capitan), the
+Xcode Command Line Tools are all that is required.  You can either install
+them directly with the following command in the Terminal:
+
+`$ xcode-select --install`
+
+Or by following [the instructions provided by Moncef Belyamani](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#step-1).
+
+Older versions of OS X may require that the full Xcode package be installed
+instead.
+
+It is also strongly recommended that you install [Homebrew](http://brew.sh/).
+This is a package manager built for OS X that aids in installing other open
+source packages and dependencies.  In most cases, the following command will
+be just fine for installing [Homebrew](http://brew.sh/):
+
+`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
 # Installing Ruby
 
 If you use OS X or some Linux distributions (such as Ubuntu), your system
@@ -81,6 +117,21 @@ usually named `Gemfile` by community convention (though if you're using
 This will install the gems listed in the file.  For more instructions
 and detailed usage information, see the
 [`gem` User Guide](http://guides.rubygems.org/command-reference/).
+
+## Speeding Up the Installation Process
+
+Many times a gem will include a large amount of documentation with it for use
+in the command line.  While useful, this documentation is usually found online
+and it also slows down the installation process of the gem, sometimes
+significantly.  In order to speed things up for yourself, consider disabling
+the installation of the gem documentation by creating or modifying a `.gemrc`
+file in your home directory and adding the following line to it:
+
+`gem: --no-document`
+
+This is especially helpful when working in projects with a lot of external
+dependencies as it will greatly speed up the setup process when it comes time
+to install the necessary gems related to it.
 
 # Managing Project Dependencies
 
