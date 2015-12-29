@@ -6,13 +6,13 @@ parent: Languages
 
 # Python Ecosystem Guide
 
-This guide explains the basics of setting up Python and related helpful tools,
-so that you can run and modify a Python-based project on your own computer. We
-wrote this for people inside and outside 18F who want to run and contribute to
-projects we build, and who aren't already familiar with working on Python
-projects. This guide is both for people who write a lot of code and for people
-who don't write any code (setting up this development environment doesn't
-require coding knowledge).
+This guide explains the basics of setting up a Python development environment
+(installing Python and related helpful tools), so that you can run and modify
+a Python-based project on your own computer. We wrote this for people inside
+and outside 18F who want to run and contribute to projects we build, and who
+aren't already familiar with working on Python projects. This guide is both
+for people who write a lot of code and for people who don't write any code
+(setting up this development environment doesn't require coding knowledge).
 
 # Installing Python
 
