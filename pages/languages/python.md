@@ -33,7 +33,7 @@ are several ways you can download and install Python:
 - With a Python version manager:
   - [pyenv](https://github.com/yyuu/pyenv)
   - [Conda](http://conda.pydata.org/docs/)
-  - [Python Launcher for Windows(as of version 3.3)](https://docs.python.org/3/using/windows.html#python-launcher-for-windows)
+  - [Python Launcher for Windows (as of version 3.3)](https://docs.python.org/3/using/windows.html#python-launcher-for-windows)
 
 When you install Python directly on a UNIX-based system, Python 2.x
 installations use the `python` and `pip` command line shortcuts and
