@@ -56,7 +56,7 @@ release for all new projects, however some existing applications do run on the
 2.x series).  While not required, this is the recommended method for 18F
 employees to install Python.
 
-# <a name="installing-python-packages">Installing Python Packages</a>
+# <a name="installing-python-packages">Installing Python packages</a>
 
 Python packages are third-party modules written in and for Python and are
 usually found within the [Python Package Index](https://pypi.python.org/pypi)
@@ -184,7 +184,7 @@ contains one within it.  Alternatively, you can use a tool called
 [`autoenv`](https://github.com/kennethreitz/autoenv) that does this for you
 without the need to customize shell scripts yourself.
 
-# <a name="notable-exceptions">Notable exceptions for global python packages</a>
+# <a name="notable-exceptions">Notable exceptions for global Python packages</a>
 
 While most Python packages should be installed and managed within the context
 of a virtual environment, there are a small handful of packages that might
