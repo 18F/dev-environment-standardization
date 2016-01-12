@@ -14,7 +14,7 @@ aren't already familiar with working on Python projects. This guide is both
 for people who write a lot of code and for people who don't write any code
 (setting up this development environment doesn't require coding knowledge).
 
-# <a name="installing-python">Installing Python</a>
+# <a name="installing-python"></a>Installing Python
 
 If you use OS X or some Linux distributions (such as Ubuntu), your system
 already has Python installed. The downside is that it is probably an
@@ -56,7 +56,7 @@ release for all new projects, however some existing applications do run on the
 2.x series).  While not required, this is the recommended method for 18F
 employees to install Python.
 
-# <a name="installing-python-packages">Installing Python packages</a>
+# <a name="installing-python-packages"></a>Installing Python packages
 
 Python packages are third-party modules written in and for Python and are
 usually found within the [Python Package Index](https://pypi.python.org/pypi)
@@ -75,7 +75,7 @@ In addition to installing packages from PyPI, `pip` can also install packages
 directly from several types of source control repositories (git, Mercurial,
 Subversion) or even from another location on your local machine.
 
-## <a name="using-pip">Using `pip`</a>
+## <a name="using-pip"></a>Using `pip`
 
 `pip` is a simple way to install a Python package.  For instance, if you want
 to install Django, you can do this:
@@ -106,7 +106,7 @@ This will install whatever packages are listed in the file.  For more
 instructions and detailed usage information, please refer to the
 [`pip` User Guide](http://pip.readthedocs.org/en/stable/user_guide/).
 
-# <a name="managing-project-dependencies">Managing project dependencies</a>
+# <a name="managing-project-dependencies"></a>Managing project dependencies
 
 With Python installed and working with Python packages under your belt, there
 is one last thing to discuss:  per-project dependencies.  When you install a
@@ -126,7 +126,7 @@ when changing the versions of the packages from one project to another.
 Python's solution for this problem is
 [`virtualenv`](https://virtualenv.readthedocs.org/en/latest/).
 
-## <a name="python-virtual-environments">Python virtual environments with virtualenv</a>
+## <a name="python-virtual-environments"></a>Python virtual environments with virtualenv
 
 `virtualenv` enables Python to look for packages in locations outside of the
 global `site-packages` directory, allowing you to import a specific directory
@@ -172,7 +172,7 @@ When you're done or ready to switch to another virtual environment, you should d
 
 `$ deactivate`
 
-## <a name="managing-virtual-environments">Managing virtual environments with virtualenvwrapper
+## <a name="managing-virtual-environments"></a>Managing virtual environments with virtualenvwrapper
 
 In addition to `virtualenv`, another tool exists to help manage Python virtual
 environments called
@@ -184,7 +184,7 @@ contains one within it.  Alternatively, you can use a tool called
 [`autoenv`](https://github.com/kennethreitz/autoenv) that does this for you
 without the need to customize shell scripts yourself.
 
-# <a name="notable-exceptions">Notable exceptions for global Python packages</a>
+# <a name="notable-exceptions"></a>Notable exceptions for global Python packages
 
 While most Python packages should be installed and managed within the context
 of a virtual environment, there are a small handful of packages that might
@@ -212,7 +212,7 @@ This will install IPython globally and now you'll be able to just run
 `ipython` without needing to activate a virtual environment to immediately get
 into this powerful Python REPL.
 
-# <a name="useful-tools">Useful Python development tools</a>
+# <a name="useful-tools"></a>Useful Python development tools
 
 This is a short list of Python packages that may come in handy when working on
 a Python project.  The packages aid in the development process by providing
@@ -252,7 +252,7 @@ testing with Python:
 [18F's Python Testing Cookbook](https://pages.18f.gov/testing-cookbook/python/)
 [Python Guide's Testing Your Code Article](http://docs.python-guide.org/en/latest/writing/tests/)
 
-# <a name="additiona-reading">Additional reading</a>
+# <a name="additiona-reading"></a>Additional reading
 
 - [The Python Tutorial: Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html) by the Python Software Foundation
 - [PEP 0008 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
