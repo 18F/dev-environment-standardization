@@ -128,6 +128,15 @@ $ eval "$(docker-machine env default)"
 
 Try looking into Docker's [Troubleshooting guide][].
 
+### Other Tools
+
+* [DLite](https://github.com/nlf/dlite) has been recommended as
+  a simpler, more convenient way to use Docker on OS X.
+
+* [Kitematic](https://kitematic.com/) is a GUI client for docker
+  that transparently takes care of some common problems that
+  occur when using docker from the command-line.
+
 [What is Docker?]: https://www.docker.com/what-docker
 [dev/prod parity]: http://12factor.net/dev-prod-parity
 [Docker goes native]: https://blog.docker.com/2016/03/docker-for-mac-windows-beta/
