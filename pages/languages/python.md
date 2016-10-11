@@ -249,8 +249,8 @@ the [18F Development Guide](https://pages.18f.gov/development-guide/).
 In addition, you may want to peruse the following bits of documentation around
 testing with Python:
 
-[18F's Python Testing Cookbook](https://pages.18f.gov/testing-cookbook/python/)
-[Python Guide's Testing Your Code Article](http://docs.python-guide.org/en/latest/writing/tests/)
+- [18F's Python Testing Cookbook](https://pages.18f.gov/testing-cookbook/python/)
+- [Python Guide's Testing Your Code Article](http://docs.python-guide.org/en/latest/writing/tests/)
 
 # <a name="additiona-reading"></a>Additional reading
 
